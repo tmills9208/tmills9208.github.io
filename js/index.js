@@ -8,6 +8,38 @@ class Page {
     }
 }
 
+class Nav extends Page{
+    render(){
+        let sMenu = "";
+        for(let n = 0; n < aPages.length; n++){
+            sMenu += `
+            <li class="nav-item">
+                <a class="nav-link" href="#${aPages[n].title}">${aPages[n].title}</a>
+            </li>
+            `
+        }
+
+        $("nav").html(`
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Tyler Mills</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                ${sMenu}
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+            </div>
+        </nav>
+        `);
+    }
+}
+
 class Section extends Page{
     constructor(oOptions){
         super();
@@ -47,7 +79,7 @@ class Portfolio extends Page{
     constructor(){
         super();
         this.header = new Page();
-        this.nav = new Page();
+        this.nav = new Nav();
         this.article = new Article();
         this.footer = new Footer();
     }
