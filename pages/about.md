@@ -1,3 +1,6 @@
+About
+=====
+
 This would be the about page
 
 I like watching shroud, very good professional fps gamer from missisauga

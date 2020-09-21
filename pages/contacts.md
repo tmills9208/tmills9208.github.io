@@ -6,7 +6,7 @@ I am Tyler Mills, software developer, I own 2 PCs and a Geforce RTX. Contact me 
 Email:
 -----
 
-tmills9208@conestogac.on.ca
+<a href="mailto:tmills9208@conestogac.on.ca">tmills9208@conestogac.on.ca</a>
 
 adding a map...
 
