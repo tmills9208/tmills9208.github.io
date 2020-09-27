@@ -11,7 +11,7 @@ class Page {
 class Nav extends Page{
     render(){
         let sMenu = "";
-        for(let i = 0; i < aPages.length; i++){
+        for(let i = 1; i < aPages.length; i++){
             if (aPages[i].title == "index") continue;
             sMenu += `
             <li class="nav-item">
@@ -28,8 +28,8 @@ class Nav extends Page{
         </form>
         */
         $("nav").html(`
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-            <a class="navbar-brand" href="#welcome">Portfolio of Tyler Mills</a>
+        <nav class="navbar navbar-dark bg-dark navbar-expand-lg fixed-top">
+            <a class="navbar-brand" href="#">Portfolio of Tyler Mills</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
@@ -41,12 +41,6 @@ class Nav extends Page{
             </div>
         </nav>
         `);
-    }
-}
-
-class Header extends Page {
-    render(){
-        $.get(``)
     }
 }
 

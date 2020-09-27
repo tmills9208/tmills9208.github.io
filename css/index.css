@@ -2,35 +2,162 @@
     box-sizing: border-box;
 }
 
+html {
+    max-width: 100%;
+}
+
+hr {
+    background-color: white;
+    height: 2px;
+}
+
+body {
+    max-width: 100%;
+}
+
+h1, h2 {
+    padding-top: 20px;
+}
+
+p {
+    padding-top: 20px;
+}
+
+body > * {
+    background-color: #333;
+    color: #eee;
+}
+
 section {
     padding: 0 15%;
 }
 
-/* intro.md */
+/* Bootstrap adjustments */
 
-img#intro-image {
-    width: 50%;
-    height: 30%;
-    object-fit: contain;
-    padding: 10px;
+.navbar-default{
+    max-width: 100%;
 }
 
+/* intro.md */
+
 section#intro {
+    background-color: #666;
+    padding: 0 15%;
     padding-top: 100px;
-    color: #ddd;
-    background-color: #333;
+    padding-bottom: 50px;
+}
+
+section#intro p {
+    margin: 0 auto;
+    text-align: center;
+    font-size: large;
 }
 
 section#intro h1,
-section#intro h3
+section#intro h2,
+section#intro h4
 {
-    display: inline;
+    padding-top: 10px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
 }
+
+section#intro ul{
+    overflow: auto;
+    list-style: none;
+    padding: 10px 0;
+    columns: 3;
+}
+
+section#intro ul li{
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #333;
+    border-radius: 40px;
+    position: relative;
+    break-inside: avoid;
+    font-size: larger;
+    display: inline-block;
+    width: 100%;
+    position: inherit;
+    text-align: center;
+}
+
+section#intro ul li img {
+    width: 50px;
+    height: auto;
+    position: absolute;
+    top: 3px;
+    left: 6px;
+}
+
+section#intro .profile-image {
+    display: block;
+    padding: auto 10px;
+    margin: 0 auto;
+    width: 10%;
+    height: auto;
+}
+
+/*
+section#intro .profile-image {
+    display: block;
+    object-fit: contain;
+    padding: auto 10px;
+    margin: 0 auto;
+    width: auto;
+    height: 20%;
+}
+*/
 
 /* projects.md */
 
 section#projects {
-    background-color: #aaa;
+    
+}
+
+section#projects ul{
+    list-style: none;
+    padding-inline-start: 0;
+    list-style-image: none;
+    columns: 2;
+    display: table;
+    page-break-inside: avoid;
+    break-inside: avoid-column;
+}
+
+section#projects ul li{
+    overflow: auto;
+    margin-top: 20px;
+    padding: 20px 40px;
+    border-radius: 20px;
+    background-color: #eee;
+    color: #222;
+    page-break-inside: avoid;
+    break-inside: avoid-column;
+}
+
+section#projects ul li img{
+    display: block;
+    margin: 0 auto;
+    margin-right: 10px;
+    max-width: 100%;
+    width: auto;
+    height: 300px;
+    float: left;
+}
+
+section#projects ul li a{
+    display: block;
+    float: none;
+}
+
+/* contacts.md */
+
+section#contacts h2:last-child {
+    padding-bottom: 20px;
+    margin: 0;
 }
 
 /* responsive css */
@@ -38,5 +165,72 @@ section#projects {
 @media (max-width: 979px) {
     body {
         padding-top: 0px;
+    }
+
+    section#intro .profile-image {
+        display: block;
+        padding: auto 10px;
+        margin: 0 auto;
+        width: 25%;
+        height: auto;
+    }
+
+    section#intro ul{
+        list-style: none;
+        padding: 10px 0;
+        columns: 2;
+    }
+
+    section#projects ul{
+        columns: 1;
+    }
+}
+
+@media (min-width: 387px) and (max-width: 506px){
+    section#intro .profile-image {
+        display: block;
+        padding: auto 10px;
+        margin: 0 auto;
+        width: 50%;
+        height: auto;
+    }
+
+    section#intro ul li p {
+        font-size: 2em;
+        display: inline-block;
+        padding: 0;
+        padding-left: 30px;
+        width: 100%;
+        position: inherit;
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 386px){
+    section#intro .profile-image {
+        display: block;
+        padding: auto 10px;
+        margin: 0 auto;
+        width: 50%;
+        height: auto;
+    }
+
+    section#intro ul li p {
+        font-size: 1em;
+        display: inline-block;
+        padding: 0;
+        padding-left: 10px;
+        width: 100%;
+        position: inherit;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    section#intro ul li img {
+        width: 25%;
+        height: auto;
+        position: absolute;
+        margin-right: 5px;
     }
 }
