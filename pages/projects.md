@@ -18,7 +18,7 @@ Projects
     <br><a href="https://github.com/tmills9208/DinoEater-Monogame" target="_blank">Link to Github</a>
 -   ![Tic Tac Toe][tictactoe]
     ## Tic Tac Toe - November 2019
-    A game I made for the final project of a game development course. Its tic tac toe, but stylized to look similar to the last tic tac toe board in the 80's film wargames
+    A game I made for the game development course. Its tic tac toe, but stylized to look similar to the last tic tac toe board in the 80's film wargames
     <br><a href="https://github.com/tmills9208/TicTacToe-Monogame" target="_blank">Link to Github</a>
 -   ![sokoban][sokoban]
     ## Sokoban - November 2019

@@ -1,3 +1,12 @@
+/*
+ * index.js
+ * Renders semantic tags via js
+ *
+ * Revision History:
+ * 		Cloned from rhildred: 09/10/2020
+ *		Tyler Mills, Init: 09/27/2020
+*/
+
 import "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js";
 import "https://cdnjs.cloudflare.com/ajax/libs/marked/1.1.1/marked.js";
 import aPages from "../pages/index.js";
@@ -19,6 +28,11 @@ class Nav extends Page{
             </li>
             `
         }
+        sMenu += `
+            <li class="nav-item">
+                <a class="nav-link" href="Assignment4/index.html"><b>Assignment 4</b></a>
+            </li>
+        `
 
         // https://getbootstrap.com/docs/4.0/components/navbar/
         /*
