@@ -30,7 +30,7 @@ class Nav extends Page{
         }
         sMenu += `
         <li class="nav-item">
-            <a class="nav-link" href="Assignment4/index.html"><b>Assignment 4</b></a>
+            <a class="nav-link" href="./FoodIdeas/"><b>Food Ideas</b></a>
         </li>
         `;
 

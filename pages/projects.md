@@ -3,6 +3,10 @@ Projects
 
 2020
 ----
+-   ![food ideas][foodIdeas]
+    ## Food Ideas - December 2020
+    A website tat allows users to find random meals and save them for later.
+    <br><a href="https://github.com/tmills9208/Food-Ideas" target="_blank">Link to Github</a>
 
 -   ![discord project][discordProject]
     ## Discord! - April 2020
@@ -25,6 +29,7 @@ Projects
     A game I made for the game development course. Push the boxes into the correct spots, ideally in the least amount of moves as possible
     <br><a href="https://github.com/tmills9208/Sokoban-Monogame" target="_blank">Link to Github</a>
 
+[foodIdeas]: ../img/projects/foodIdeas.png "food ideas front page"
 [discordProject]: ../img/projects/discordbootlegimage.png "discord project ui"
 [dinoEater]: ../img/projects/DinoEater.png "dino eater"
 [tictactoe]: ../img/projects/TMillsAssignment3Screenshot1.png "tic tac toe"
