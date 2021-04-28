@@ -28,11 +28,6 @@ class Nav extends Page{
             </li>
             `
         }
-        sMenu += `
-        <li class="nav-item">
-            <a class="nav-link" href="./FoodIdeas/"><b>Food Ideas</b></a>
-        </li>
-        `;
 
         // https://getbootstrap.com/docs/4.0/components/navbar/
         /*
