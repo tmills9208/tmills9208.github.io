@@ -67,7 +67,7 @@ section#intro ul{
     overflow: auto;
     list-style: none;
     padding: 10px 0;
-    columns: 3;
+    columns: 4;
 }
 
 section#intro ul li{

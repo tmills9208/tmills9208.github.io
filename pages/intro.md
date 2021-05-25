@@ -3,17 +3,26 @@
 # Tyler Mills    
 #### Software Developer
 
-Currently attending Conestoga College as a third year student, while learning more skills that will be applicable in the future
+Recent Graduate from Conetoga College. Looking for web development opportunities
 
 <hr>
 
 ## Skills & Points of Interest
-- Unity
-- React
-- SQL
-- ASP.NET
-- Object Relational Modeling
-- Node.js
+- MySQL/MongoDB 
+- Windows OS 
+- ReactJS 
+- HTML/CSS/JS 
+- Material-UI
+- ASP.NET 
+- Java Web Servlets 
+- Object-Oriented Design Methodologies 
+- UML Methodologies 
+- .NET Framework 
+- .NET Core 
+- Git & Github 
+- UI/UX Design & Implementation 
+- Agile Workflow 
+- Effective Team Member
 
 
 [unity]: ../img/icons/icons8-unity-50.png

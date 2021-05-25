@@ -46,6 +46,9 @@ class Nav extends Page{
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 ${sMenu}
+                <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/tmills9208">github.com/tmills9208</a>
+                </li>
             </ul>
             </div>
         </nav>
