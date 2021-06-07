@@ -10,3 +10,4 @@ I am also located on these platforms
 ------------------------------------
 
 - Github: <a href="https://github.com/tmills9208">github.com/tmills9208</a>
+- LinkedIn: <a href="https://www.linkedin.com/in/tmills9208/">https://www.linkedin.com/in/tmills9208</a>
