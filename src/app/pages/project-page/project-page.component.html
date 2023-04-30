@@ -1,0 +1,10 @@
+<div class="page">
+  <!-- <div class="hero-image">
+    <img class="cover-img" [src]="project?.coverImg" alt="">
+  </div> -->
+  <div class="contents">
+    <app-deployed-site-button [resourceHref]="project?.urls?.deployment"></app-deployed-site-button>
+    <markdown class="markdown-container" [src]="localMarkdownUrl" [srcRelativeLink]="true"></markdown>
+  </div>
+</div>
+

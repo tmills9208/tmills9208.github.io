@@ -1,0 +1,20 @@
+.deployed-site-button {
+  &.checking {
+    border-color: cyan;
+    color: cyan;
+  }
+  &.isActive {
+    border-color: red;
+    color: white;
+  }
+  &.isInactive {
+    border-color: #444;
+    color: #888;
+  }
+
+  .spinner {
+    height: 100%;
+    width:auto;
+    max-width: 50px;
+  }
+}

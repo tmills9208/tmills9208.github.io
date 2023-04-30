@@ -1,0 +1,15 @@
+<mat-toolbar class="spacer header">
+  <div style="display: flex; align-items: center;">
+    <!-- <button style="margin-right: 10px;" (click)="toggleSidenav()" *ngIf="responsive.isMedium()" mat-icon-button><mat-icon>menu</mat-icon></button> -->
+    <a mat-button [routerLink]="['/']" style="font-size: inherit;">tmills9208</a>
+  </div>
+  <div class="nav-buttons">
+    <a mat-fab extended color="basic" className="nav-link" routerLinkActive="primary" [routerLink]="['/projects']">
+      <mat-icon>laptop</mat-icon>
+      <span>Projects</span>
+    </a>
+  </div>
+  <!-- <div>
+    <app-social-links [expanded]="false"></app-social-links>
+  </div> -->
+</mat-toolbar>

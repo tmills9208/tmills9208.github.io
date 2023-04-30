@@ -1,0 +1,33 @@
+.markdown-container {
+  display: flex;
+  margin: 0 auto;
+  width: 80%;
+  flex-direction: column;
+  justify-content: center;
+
+  @media screen and (max-width: 1024px) {
+    width: 95%;
+    max-width: 95%;
+  }
+}
+
+.project-markdown {
+  br {
+    border: 2px solid white;
+    margin: 20px auto;
+    width: 90%;
+  }
+}
+
+.project-header {
+  height: 50vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+.hero-image {
+  .cover-img {
+    object-fit: cover;
+    
+  }
+}

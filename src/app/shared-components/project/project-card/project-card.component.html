@@ -1,0 +1,30 @@
+<mat-card class="project-card">
+  <mat-card-header class="card-header">
+    <mat-card-title class="card-title-wrapper">
+        <span class="card-title">{{ project?.name }}</span>
+        
+    </mat-card-title>
+    <mat-card-subtitle>
+      <span class="card-date">{{
+        project?.datePublished | date : "longDate"
+      }}</span>
+      <!-- <app-project-tag-list [tags]="project?.tags"></app-project-tag-list> -->
+    </mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-image [src]="project?.coverImg" />
+  <mat-card-content class="card-content">
+    {{ project?.description }}
+  </mat-card-content>
+  <mat-card-footer>
+    <mat-card-actions class="card-actions">
+      <a mat-button [routerLink]="['/projects', project?.slug]">Details</a>
+      <a
+        mat-button
+        class="deployed-link"
+        *ngIf="project?.urls?.deployment"
+        [href]="project?.urls?.deployment"
+        >View Deployment</a
+      >
+    </mat-card-actions>
+  </mat-card-footer>
+</mat-card>

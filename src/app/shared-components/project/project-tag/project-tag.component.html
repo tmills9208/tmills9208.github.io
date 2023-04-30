@@ -1,0 +1,13 @@
+<div class="project-tag" [class]="colorClass">
+  <div *ngIf="tagIcon">
+    <ng-container *ngIf="svgIcon; then svg; else ligature"></ng-container>
+    <ng-template #svg>
+      <img class="svg-icon icon" [src]="tagIcon" alt="" srcset="" />
+    </ng-template>
+    <ng-template #ligature>
+      <mat-icon class="icon">{{ tagIcon }}</mat-icon>
+    </ng-template>
+  </div>
+
+  <span>{{ tag }}</span>
+</div>

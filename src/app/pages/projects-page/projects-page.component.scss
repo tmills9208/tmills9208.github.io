@@ -1,0 +1,29 @@
+.contents {
+  display: flex;
+  margin: 0 auto;
+  width: 60%;
+  flex-direction: column;
+  justify-content: center;
+
+  h1 {
+    padding-top: 20px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    width: 95%;
+    max-width: 95%;
+  }
+}
+
+.project-list {
+  display: flex;
+  justify-content: space-between;
+  * {
+    width: 48%;
+
+    // Media queries for items in the list
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
+  }
+}

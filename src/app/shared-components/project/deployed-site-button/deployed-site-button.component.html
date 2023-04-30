@@ -1,0 +1,8 @@
+<a
+  class="deployed-site-button"
+  mat-stroked-button
+  [href]="resourceHref"
+  [class.checking]="gettingResponse"
+  [class.isActive]="isOnline"
+  [class.isInactive]="!isOnline"
+>{{ label }}</a>

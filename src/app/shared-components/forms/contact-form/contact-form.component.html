@@ -1,0 +1,29 @@
+<form
+  action="mailto:tmills9208@gmail.com"
+  method="get"
+  enctype="application/x-www-form-urlencoded"
+  id="contact-form"
+  class="contact-form"
+>
+  <h1>Contact me here</h1>
+  <mat-form-field appearance="fill">
+    <mat-label>Your Name</mat-label>
+    <input name="subject" matInput />
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>Your Email</mat-label>
+    <input type="email" name="email" matInput />
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>Your message</mat-label>
+    <textarea
+      rows="5"
+      cols="30"
+      name="body"
+      matInput
+    ></textarea>
+  </mat-form-field>
+  <button mat-flat-button color="primary" type="submit" value="Send">
+    Submit
+  </button>
+</form>

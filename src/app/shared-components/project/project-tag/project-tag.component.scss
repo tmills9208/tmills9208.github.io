@@ -1,0 +1,76 @@
+.project-tag {
+  height: 20px;
+  max-height: 30px;
+  max-width: 200px;
+  font-size: x-small;
+  pointer-events: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 1.5rem;
+  border: 1px solid #fff7;
+  padding: 0 1rem;
+
+  .icon {
+    margin-right: 10px;
+    max-height: 30px;
+    justify-content: center;
+  }
+  
+  .svg-icon {
+    max-height: 30px;
+  }
+}
+
+.red {
+  background-color: red;
+  color: white;
+}
+.yellow {
+  background-color: yellow;
+  color: black;
+}
+.orange {
+  background-color: orange;
+  color: black;
+}
+.blue {
+  background-color: blue;
+  color: white;
+}
+.cyan {
+  background-color: cyan;
+  color: black;
+}
+.green {
+  background-color: green;
+  color: white;
+}
+.purple {
+  background-color: purple;
+  color: white;
+}
+.white {
+  background-color: white;
+  color: black;
+}
+.black {
+  background-color: black;
+  color: white;
+}
+
+.white-red {
+  background-color: white;
+  color: red;
+  border: 1px solid red;
+}
+.red-white {
+  background-color: red;
+  color: white;
+  border: 1px solid white;
+}
+.white-cyan {
+  background-color: white;
+  color: cyan;
+  border: 1px solid cyan;
+}

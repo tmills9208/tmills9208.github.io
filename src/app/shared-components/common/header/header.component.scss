@@ -1,0 +1,32 @@
+.spacer {
+  flex: 1 1 auto;
+  justify-content: space-between;
+}
+
+.nav-buttons {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 0);
+
+  .nav-link {
+    border: 1px solid #0000;
+    background-color: #fff !important;
+
+    a {
+      margin: 0 .5rem;
+    }
+
+    &.active-route {
+      border: 10x solid cyan;
+    }
+  }
+}
+
+.header {
+  position: sticky;
+  width: 100%;
+  max-width: 100vw;
+  top: 0;
+  z-index: 5;
+  padding: 1rem;
+}

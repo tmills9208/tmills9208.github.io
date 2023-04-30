@@ -1,0 +1,40 @@
+.social-media {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+    gap: 0.5rem;
+    &.not-expanded {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+
+  .social-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 20px;
+    gap: 1rem;
+    border: 1px solid transparent;
+    text-decoration: none;
+
+    &:hover {
+      border: 1px solid cyan;
+    }
+
+    img {
+      width:48px;
+      height: 48px;
+    }
+
+    span {
+      font-size: large;
+      font-weight: bold;
+      color: white;
+    }
+  }
+}

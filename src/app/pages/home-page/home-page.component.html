@@ -1,0 +1,98 @@
+<!-- Setup a boolean output, and place the sidebar in the app.html -->
+<!-- <button mat-fab color="basic" [matMenuTriggerFor]="menu" class="toc-button">
+  <mat-icon>list_alt</mat-icon>
+</button>
+<mat-menu #menu="matMenu" xPosition="after">
+  <div *ngFor="let content of tocList; index as i;">
+    <a mat-button color="basic" [href]="'#'+content" mat-menu-item>{{content}}</a>
+  </div>
+</mat-menu> -->
+<section id="landing">
+  <div class="hero-image" style="background-color: #333">
+    <!-- Video background -->
+    <video class="cover-img" loop autoplay muted>
+      <source
+        src="assets/vids/FortunateSandyArrowcrab-mobile.mp4"
+        type="video/mp4"
+      />
+    </video>
+    <div class="hero-text">
+      <h1 class="text-shadow white-on-black">Tyler Mills</h1>
+      <p>Professional Software Developer</p>
+      <ngx-typed-js
+        [typeSpeed]="100"
+        [backDelay]="1000"
+        [loop]="true"
+        [strings]="typedStrings"
+      >
+        Developing with: <span class="typing"></span>
+      </ngx-typed-js>
+    </div>
+  </div>
+</section>
+<div class="home-spacer"></div>
+<section id="about">
+  <div class="hero-image" style="background-color: #333">
+    <div class="contents">
+      <h1>About Myself</h1>
+      <div class="about-card">
+        <div class="about-header">
+          <img src="assets/pages/home/1.png" alt="My face">
+          <div>
+            <app-social-links [expanded]="false"></app-social-links>
+          </div>
+          
+        </div>
+        <div class="about-content">
+          <h2>Tech-savvy Web Developer</h2>
+          <p>Always looking for the next opportunity to arise. Passionate about maintaining clean and efficient standards within software and development, official or otherwise, in order to bring out the most function within applications as possible. Also very much into making any product, <i>whether it's software, audio, or visual</i>: Efficient, Reliable, and Pleasant to the intended customers or audiences.</p>
+          <ul>
+            <li>
+              <mat-icon>home</mat-icon>
+              <span>Residing in Kitchener, Ontario</span>
+            </li>
+            <li>
+              <mat-icon>location_on</mat-icon>
+              <span>Working in Cambridge, Kitchener-Waterloo, and Remotely throughout Canada</span>
+            </li>
+            <li>
+              <mat-icon>location_on</mat-icon>
+              <span>3</span>
+            </li>
+            <li>
+              <mat-icon>location_on</mat-icon>
+              <span>4</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="home-spacer"></div>
+<section id="projects">
+  <div class="hero-image" style="background-color: #333">
+    <!-- Three.js Shader background -->
+    <!-- <app-three-canvas class="cover-img" [shader]="'shader1.txt'"></app-three-canvas> -->
+    <div class="contents">
+      <h1>Here are some of my most recent Projects</h1>
+      <a
+        class="projects-link"
+        [routerLink]="['/projects']"
+        mat-flat-button
+        color="primary"
+        >View more projects here</a
+      >
+      <app-project-list [limit]="4"></app-project-list>
+    </div>
+  </div>
+</section>
+<!-- <div class="home-spacer"></div>
+<section id="skills">
+  <div class="hero-image" style="background-color: #333">
+    <div class="hero-text">
+      <h1>Skills</h1>
+      <p>Stuff 2</p>
+    </div>
+  </div>
+</section> -->

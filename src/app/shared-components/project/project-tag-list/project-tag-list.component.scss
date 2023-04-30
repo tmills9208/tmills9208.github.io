@@ -1,0 +1,9 @@
+.project-tag-list {
+  display: inline-flex;
+  width: 100%;
+  margin: 10px 0;
+  gap: 5px;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
