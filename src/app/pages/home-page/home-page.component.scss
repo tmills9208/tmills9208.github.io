@@ -14,7 +14,7 @@
 }
 
 .about-card {
-  margin: 0 auto;
+  border-radius: 1rem;
   gap: 2rem;
   display: flex;
   width: 80%;
@@ -37,10 +37,16 @@
   }
 
   .about-header {
+    align-items: center;
+
     img {
       object-fit: contain;
-      max-width: 100%;
-      max-height: auto;
+      max-width: auto;
+      max-height: 300px;
+
+      @media screen and (max-width:620px) {
+        max-height: 200px;
+      }
     }
   }
 
@@ -64,6 +70,12 @@
         padding: 0.5rem 0;
         gap: 1rem;
         align-items: center;
+        a {
+          text-decoration: none;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
         span {
           max-width: 80%;
         }

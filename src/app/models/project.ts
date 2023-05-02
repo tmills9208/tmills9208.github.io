@@ -11,6 +11,8 @@ export enum ProjectTag {
   vue = 'Vue',
   react = 'React.js',
   node = 'Node.js',
+
+  htmlcss = "HTML, CSS",
   
   // More Techs
   expressjs = 'Express.js',
@@ -23,6 +25,9 @@ export enum ProjectTag {
   bootstrap = 'Bootstrap CSS',
   // Misc
   college = "College",
+  game = "Game",
+  web = "Web Application",
+  fullstack = "Full-stack Application"
 }
 
 export interface ProjectData {

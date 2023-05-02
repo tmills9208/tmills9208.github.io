@@ -22,7 +22,7 @@ export const PROJECTS: ProjectData[] = [
   },
   {
     name: 'College Capstone Project - Tink.com',
-    coverImg: 'assets/images/projects/tictactoe-2019.png',
+    coverImg: 'assets/images/projects/capstone-2021.png',
     slug: 'college-capstone-2021',
     datePublished: new Date(2021, 3, 15),
     description: 'A full gaming/social-media web application we proposed and developed for our final cumulative project of our College program. I was mostly in charge of the front-end development, with my two colleagues performing as a back-end developer, and a project manager respectively. The project had won 2nd place for being intuitive and functionally stable, along with a good marketing proposal.',
@@ -34,7 +34,10 @@ export const PROJECTS: ProjectData[] = [
     markdown: 'capstone-2021',
     tags: [
       ProjectTag.college,
-      ProjectTag.csharp,
+      ProjectTag.javascript,
+      ProjectTag.react,
+      ProjectTag.node,
+      ProjectTag.expressjs,
     ]
   },
   {
@@ -96,7 +99,7 @@ export const PROJECTS: ProjectData[] = [
     description: 'A final project for the \'Emerging Technologies\' course at the time. Displays recipes from a public API, and saves your data simply to your local storage. Purely for practical and simple usage.',
     urls: {
       deployment: '',
-      github: 'https://github.com/tmills9208/angular15-weatherapp',
+      github: 'https://github.com/tmills9208/Food-Ideas',
       other: ''
     },
     markdown: 'food-ideas-2020',

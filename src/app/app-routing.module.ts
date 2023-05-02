@@ -19,6 +19,10 @@ const routes: Routes = [
     path: 'projects/:slug',
   }
   ,{
+    redirectTo: '/',
+    path: 'portfolio-2023',
+  }
+  ,{
     component: NotFoundPageComponent,
     path: '**',
   }

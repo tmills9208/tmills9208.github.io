@@ -1,9 +1,19 @@
 <div class="page">
-  <!-- <div class="hero-image">
+  <div class="project-header">
     <img class="cover-img" [src]="project?.coverImg" alt="">
-  </div> -->
+    <div class="header-content">
+      <h1>{{project?.name}}</h1>
+      <span>{{project?.datePublished | date:'longDate'}}</span>
+    </div>
+  </div>
   <div class="contents">
-    <app-deployed-site-button [resourceHref]="project?.urls?.deployment"></app-deployed-site-button>
+    <div class="top-links">
+      <a [href]="project?.urls?.github">
+        <mat-icon>code</mat-icon>
+        Source Code
+      </a>
+      <app-deployed-site-button *ngIf="project?.urls?.deployment" [resourceHref]="project?.urls?.deployment"></app-deployed-site-button>
+    </div>
     <markdown class="markdown-container" [src]="localMarkdownUrl" [srcRelativeLink]="true"></markdown>
   </div>
 </div>
