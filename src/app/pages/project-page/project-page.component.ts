@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
+import { GoogleTagManagerService } from 'angular-google-tag-manager';
 import { MarkdownService } from 'ngx-markdown';
 import { ProjectData } from 'src/app/models/project';
 import { ProjectsService } from 'src/app/services/projects.service';
@@ -20,7 +21,8 @@ export class ProjectPageComponent implements OnInit {
   constructor(
     private route: ActivatedRoute,
     private service: ProjectsService,
-    public responsive: ResponsiveService
+    public responsive: ResponsiveService,
+    private gtmService: GoogleTagManagerService, private router: Router
   ) {}
 
   ngOnInit(): void {
@@ -37,5 +39,16 @@ export class ProjectPageComponent implements OnInit {
           });
       }
     });
+
+    this.router.events.forEach(event => {
+      if (event instanceof NavigationEnd) {
+        const gtmTag = {
+          event: 'page',
+          pageName: event.url
+        }
+
+        this.gtmService.pushTag(gtmTag);
+      }
+    })
   }
 }

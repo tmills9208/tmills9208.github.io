@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { Meta, MetaDefinition } from '@angular/platform-browser';
 import { USING_THESE_TECHS } from '../../utilities/constants'
+import { GoogleTagManagerService } from 'angular-google-tag-manager';
+import { NavigationEnd, Router } from '@angular/router';
 
 let pageSeo: MetaDefinition[] = [
   { name: 'title', content: 'tmills9208 - Web Portfolio' },
@@ -38,10 +40,21 @@ let pageSeo: MetaDefinition[] = [
 export class HomePageComponent {
   typedStrings: string[] = USING_THESE_TECHS;
   tocList: string[];
-  constructor(private meta: Meta) {
+  constructor(private meta: Meta, private gtmService: GoogleTagManagerService, private router: Router) {
     this.meta.addTags(pageSeo);
     this.tocList = [];
     var el = document.getElementsByName('section');
     el.forEach((section) => this.tocList.push(section.id));
+
+    this.router.events.forEach(event => {
+      if (event instanceof NavigationEnd) {
+        const gtmTag = {
+          event: 'page',
+          pageName: event.url
+        }
+
+        this.gtmService.pushTag(gtmTag);
+      }
+    })
   }
 }

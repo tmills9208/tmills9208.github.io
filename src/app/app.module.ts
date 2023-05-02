@@ -33,6 +33,7 @@ import { ProjectTagListComponent } from './shared-components/project/project-tag
 import { ContactFormComponent } from './shared-components/forms/contact-form/contact-form.component';
 import { SocialLinksComponent } from './shared-components/common/social-links/social-links.component';
 import { SidenavComponent } from './shared-components/common/sidenav/sidenav.component';
+import { GoogleTagManagerModule } from 'angular-google-tag-manager';
 
 @NgModule({
   declarations: [
@@ -67,6 +68,9 @@ import { SidenavComponent } from './shared-components/common/sidenav/sidenav.com
     }),
     MarkdownModule.forChild(),
     MaterialModule,
+    GoogleTagManagerModule.forRoot({
+      id: 'GTM-5DJCGJJ'
+    })
   ],
   providers: [ResponsiveService],
   bootstrap: [AppComponent],
